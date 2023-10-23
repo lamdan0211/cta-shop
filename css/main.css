@@ -150,21 +150,6 @@ input[type=search]::-webkit-search-results-decoration {
 .margintb{
   margin: 4rem 0;
 }
-
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 /**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 Saurabh Sharma
@@ -708,8 +693,9 @@ input[type=search]::-webkit-search-results-decoration {
   background: white;
   box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 5px;
-  max-width: 135px;
+  max-width: 100%;
   padding: 1rem;
+  
 }
 .header .wrapper .right .account .dropdown-account ul::before {
   content: "";
@@ -739,6 +725,17 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .header .wrapper .right .account .dropdown-account .login a {
   color: white;
+}
+.header .wrapper .right .account .dropdown-account ul li.my-profile{
+  width: 150px;
+  max-width: 100%;
+}
+.header .wrapper .right .account .dropdown-account ul li.my-profile a, .header .wrapper .right .account .dropdown-account ul li.signout a, .header .wrapper .right .account .dropdown-account ul li.my-order a{
+  color: #424B5A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
 }
 .header .wrapper .right .account .dropdown-account .signup {
   width: 100px;
@@ -1244,7 +1241,7 @@ input[type=search]::-webkit-search-results-decoration {
   font-size: 16px;
   font-weight: 400;
   color: #424B5A;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
   outline: none;
 }
 .form-input .input:focus {
@@ -1254,7 +1251,7 @@ input[type=search]::-webkit-search-results-decoration {
   font-size: 16px;
   font-weight: 400;
   color: #808080;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
 }
 .form-input .delete {
   position: absolute;
@@ -1269,7 +1266,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 button[type=button], button[type=submit] {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
   cursor: pointer;
 }
 
